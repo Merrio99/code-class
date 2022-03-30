@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row" >
+        <div *ngFor="let employee of Employees" class="col">
+            <img src="" alt="" srcset="">
+            <app-card [birthDate]="employee.birthDate" [employeeID]="employee.employeeID" [employeeName]="employee.employeeName" [gender]="employee.gender"></app-card>
+        </div>
+    </div>
+</div>
+
+
+
