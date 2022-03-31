@@ -4,12 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
-import{HttpClient, HttpClientModule}from'@angular/common/http'
+import{HttpClient, HttpClientModule}from'@angular/common/http';
+import { FromEmployeeComponent } from './components/from-employee/from-employee.component'
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    FromEmployeeComponent
   ],
   imports: [
     BrowserModule,
