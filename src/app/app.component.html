@@ -1,9 +1,14 @@
 <app-navbar></app-navbar>
 <div class="container">
+    
+    <div class="row">
+        <div class="col">
+            <app-from-employee></app-from-employee>
+        </div>
+    </div>
     <div class="row" >
         <div *ngFor="let employee of Employees" class="col">
-            <img src="" alt="" srcset="">
-            <app-card [birthDate]="employee.birthDate" [employeeID]="employee.employeeID" [employeeName]="employee.employeeName" [gender]="employee.gender"></app-card>
+            <app-card [birthDate]="employee.birthDate" [employeeID]="employee.employeeID" [employeeName]="employee.employeeName" [gender]="employee.gender" [hireDate]="employee.hireDate" [jobTitle]="employee.jobTitle" [loginID]="employee.loginID" [maritalStatus]="employee.maritalStatus" [modifiedDate]="employee.modifiedDate" [modifiedDate]="employee.modifiedDate" [nationalIDNumber]="employee.nationalIDNumber" [rowGuide]="employee.rowGuide" [sickLeaveHours]="employee.sickLeaveHours" [vacationHours]="employee.vacationHours"></app-card>
         </div>
     </div>
 </div>
